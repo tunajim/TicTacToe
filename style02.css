@@ -1,0 +1,152 @@
+body {
+}
+
+td {
+    border:  2px solid black;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: monospace;
+    font-size: 70px;
+    cursor: pointer;
+}
+
+table{
+    border-collapse: collapse;
+    position: absolute; 
+    left: 50%;
+    margin-left: -155px;
+    top: 50px;
+}
+
+table tr:first-child td {
+    border-top: 0;
+}
+
+table tr td:first-child{
+    border-left: 0;
+}
+
+table tr td:last-child {
+    border-right: 0;
+}
+
+table tr:last-child td {
+    border-bottom: 0;
+}
+
+.endgame{
+    display: none;
+    width: 200px;
+    top: 120px;
+    background-color: lightseagreen;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 2em;
+}
+
+#overlay {
+    width: 320px;
+    height: 320px;
+    //background-color: khaki;
+    opacity: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    pointer-events: none;
+}
+
+#overlay.active{
+    pointer-events: all;
+}
+
+#reset{
+    transform: scale(0);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px
+}
+
+#reset.active{
+    transform: scale(1);
+}
+
+#buttonContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    //background-color: lawngreen;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#playerBtns{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+#playerBtns button{
+    padding: 10px;
+}
+
+@font-face {
+        font-family: "digital-clock-font";
+        src: url('/ticking-timebomb-bb/TickingTimebombBB.ttf');
+    }
+
+#inform{
+    text-align: center;
+    align-content: center;
+    
+    border: 2px solid black;
+    background-color: rgba(211, 211, 211, 0.534);
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    font-size: 20px;
+    height: 25px;
+    
+    font-family: 'digital-clock-font';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#inform p{
+    font-size: 20px;
+  
+}
+
+@media (max-width: 500px) {
+    td{
+        width: 80px;
+        height: 80px;
+    }
+
+    table{
+        align-items: center;
+        position: absolute;
+        transform: translate(13%, 10%);
+    }
+
+    #inform{
+        width: 300px;
+    }
+
+    #inform p{
+        font-size: 15px;
+    }
+
+}
+
+
