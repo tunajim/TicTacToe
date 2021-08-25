@@ -99,7 +99,7 @@ table tr:last-child td {
 
 @font-face {
         font-family: "digital-clock-font";
-        src: url('/ticking-timebomb-bb/TickingTimebombBB.ttf');
+        src: url('ticking-timebomb-bb/TickingTimebombBB.ttf');
     }
 
 #inform{
