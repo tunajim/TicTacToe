@@ -16,8 +16,10 @@ table{
     border-collapse: collapse;
     position: absolute; 
     left: 50%;
-    margin-left: -155px;
+    transform: translate(-50%, 0%);
     top: 50px;
+    height: 300px;
+    width: 300px;
 }
 
 table tr:first-child td {
@@ -112,19 +114,14 @@ table tr:last-child td {
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
-    font-size: 20px;
     height: 25px;
     
     font-family: 'digital-clock-font';
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
 }
 
 #inform p{
     font-size: 20px;
-  
+    transform: translate(0, -50%);
 }
 
 @media (max-width: 500px) {
@@ -136,7 +133,7 @@ table tr:last-child td {
     table{
         align-items: center;
         position: absolute;
-        transform: translate(13%, 10%);
+        
     }
 
     #inform{
